@@ -4,16 +4,16 @@ import Sidebar from '../Sidebar';
 
 const Home = () => {
   
-    const[isOpen, setIsOpen] = useState(false)
+    const[isOpen, setIsOpen] = useState(false);
 
-    //update the state and reverse it
+    //function to update the state and reverse it
     const toggle = ()=>{
-        setIsOpen(!isOpen)
-    }
+        setIsOpen(!isOpen);
+    };
   return (
       <>
-      <Sidebar/>
-      <NavBar/>
+      <Sidebar isOpen={isOpen} toggle={toggle}/>
+      <NavBar toggle={toggle}/>
       </>
   );
 };
