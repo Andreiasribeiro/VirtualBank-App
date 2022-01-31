@@ -29,7 +29,7 @@ padding: 0 24px;
 max-width: 1100px;
 `
 export const NavLogo = styled(LinkR)`
-color: #fff;
+color: #800ba3;
 justify-content: flex-start;
 cursor: pointer;
 display: flex;
@@ -95,7 +95,7 @@ align-items: center;
 
 export const NavBtnLink = styled(LinkR)`
 border-radius: 50px;
-background: #01bf71;
+background: #800ba3;
 white-space: nowrap;
 padding: 10px 22px;
 color: #010606;
