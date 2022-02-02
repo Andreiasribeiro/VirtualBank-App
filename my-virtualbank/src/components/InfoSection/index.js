@@ -1,46 +1,47 @@
 import React from 'react';
-import {Button} from '../ButtonElement';
+import { Button } from '../ButtonElement';
 import {
-    InfoContainer, InfoRow, 
-    InfoWrapper, Column1, 
-    TextWrapper, TopLine, 
-    Heading, SubTitle, 
+    InfoContainer, InfoRow,
+    InfoWrapper, Column1,
+    TextWrapper, TopLine,
+    Heading, SubTitle,
     BtnWrapper,
     Column2,
-    ImgWrap, Img} from './InfoElement';
-  
+    ImgWrap, Img
+} from './InfoElement';
 
-const InfoSection = ({lightBg, 
-    id,imgStart, headLine,lighText,topLine, 
-    darkText , description, buttonLabel, 
-    img, alt,primary, dark, dark2}) => {
+
+const InfoSection = ({ lightBg,
+    id, imgStart, headLine, lightText, topLine,
+    darkText, description, buttonLabel,
+    img, alt, primary, dark, dark2 }) => {
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
                 <InfoWrapper>
-                    <InfoRow imgStart={imgStart}> 
+                    <InfoRow imgStart={imgStart}>
                         <Column1>
                             <TextWrapper>
                                 <TopLine>{topLine}</TopLine>
-                                <Heading lighText={lighText}>{headLine}</Heading>
+                                <Heading lightText={lightText}>{headLine}</Heading>
                                 <SubTitle darkText={darkText}>{description}</SubTitle>
                                 <BtnWrapper>
                                     <Button to='home'
-                                    smooth={true}
-                                    duration={500}
-                                    exact='true'
-                                    offset={-80}
-                                    primary={primary ? 1:0}
-                                    dark={dark ? 1:0}
-                                    dark2={dark2 ? 1:0}>{buttonLabel}</Button>
+                                        smooth={true}
+                                        duration={500}
+                                        spy={true}
+                                        exact='true'
+                                        offset={-80}
+                                        primary={primary ? 1 : 0}
+                                        dark={dark ? 1 : 0}
+                                        dark2={dark2 ? 1 : 0}>{buttonLabel}</Button>
                                 </BtnWrapper>
                             </TextWrapper>
                         </Column1>
                         <Column2>
-                        <ImgWrap>
-                        {/* <Img/> */}
-                        <Img src={img} alt ={alt}/>
-                        </ImgWrap>
+                            <ImgWrap>
+                                <Img src={img} alt={alt} />
+                            </ImgWrap>
                         </Column2>
                     </InfoRow>
                 </InfoWrapper>

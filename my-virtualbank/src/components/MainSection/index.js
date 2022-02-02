@@ -15,7 +15,7 @@ const MainSection = () => {
         setHover(!hover)
     }
     return (
-        <MainContainer>
+        <MainContainer id='home'>
             <MainBg>
                 <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
             </MainBg>
@@ -30,6 +30,11 @@ const MainSection = () => {
                     onMouseLeave={onHover}
                     primary ='true'
                     dark='true'
+                    smooth={true} 
+                    duration={500} 
+                    spy={true}
+                    exact='true' 
+                    offset={-80}
                     >
                         Get started {hover ? <ArrowFoard /> : <ArrowRight />}
                     </Button >
