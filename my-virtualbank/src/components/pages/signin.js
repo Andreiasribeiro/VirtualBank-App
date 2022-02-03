@@ -5,7 +5,7 @@ import React from 'react';
 const SignInPage = () => {
   return  (
   <>
-  <h1>Sign In page</h1>
+ 
   {/* <ScrollToTop/> */}
   {/* <SignIn/> */}
   </>
