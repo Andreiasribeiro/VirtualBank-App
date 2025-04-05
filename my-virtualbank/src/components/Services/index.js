@@ -22,6 +22,20 @@ const Services = () => {
             <ServicesH2> Reduce your expenses</ServicesH2>
             <ServicesP>Whether you’re opening your first bank account or switching from another financial instituti</ServicesP>
           </ServicesCard>
+    <ServicesCard>
+  <ServicesH2>Live Dashboard</ServicesH2>
+  <iframe
+    src={iframeUrl}
+    width="100%"
+    height="400"
+    frameBorder="0"
+    title="Metabase Dashboard"
+    style={{ borderRadius: "10px" }}
+    allowTransparency
+  />
+  <ServicesP>View your data in real time through our embedded Metabase dashboard.</ServicesP>
+</ServicesCard>
+
           <ServicesCard>
             <ServicesIcon src={Icon3} />
             <ServicesH2> Reduce your expenses</ServicesH2>
